@@ -1,0 +1,269 @@
+@font-face {
+	font-family: "SourceSansPro";
+	src: url(fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+	font-family: "SourceSansPro semibold";
+	src: url(fonts/SourceSansPro-Semibold.ttf);
+}
+@font-face {
+	font-family: "Ventography";
+	src: url(fonts/Ventography_Personal_Use_Only.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #7e7c7c;
+	font-family: "SourceSansPro semibold";
+}
+a {
+	color: #7e7c7c;
+	text-decoration: none;
+	transition: color .2s;
+}
+a:hover { color: #504e4e; }
+img { width: 100%; }
+
+.left { float: left; }
+.right { float: right; }
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+.header-nav {
+	height: 74px;
+	line-height: 74px;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	font: 50px "Ventography";
+}
+.nav {
+	display: inline-block;
+}
+.nav li {
+	display: inline-block;
+	margin-left: 36px;
+}
+.nav a {
+	position: relative;
+}
+.nav .wht a::after {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	top: 50%;
+	left: 100%;
+	background: orange;
+	border-radius: 50%;
+	margin-top: -7px;
+}
+.search {
+	position: absolute;
+	right: 48px;
+	top: 0;
+	position: absolute;
+}
+.search-input,
+.search-btn {
+	height: 34px;
+	border-radius: 40px;
+	border: none;
+}
+.search-input {
+	width: 160px;
+	background-color: #ebebeb;
+	padding-left: 20px;
+	font-family: "SourceSansPro semibold";
+	color: #7e7c7c;
+	transition: width .3s;
+}
+.search-input::-webkit-input-placeholder {
+	color: #7e7c7c;
+}
+.search-input:focus,
+.search-btn:focus {
+	outline: none;
+}
+.search-input:focus {
+	background-color: #d5d5d5;
+	width: 200px;
+}
+.search-btn {
+	width: 30px;
+	background: url(img/search-icon.png) transparent no-repeat center;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	right: 10px;
+	margin-top: -17px;
+}
+.profile {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.profile img {
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+	cursor: pointer;
+}
+
+
+/*HEADER-MAIN*/
+.header-main {
+	background: url(img/back.jpg) no-repeat center;
+	background-size: cover;
+	height: 524px;
+	position: relative;
+}
+.main-title {
+	position: absolute;
+	top: 225px;
+}
+.main-title h1 {
+	color: #fff;
+	font: normal 30px "SourceSansPro";
+	margin-bottom: 20px;
+	position: relative;
+}
+.main-title h1::after {
+	content: "";
+	position: absolute;
+	width: 87px;
+	height: 1px;
+	top: 100%;
+	left: 0;
+	background: url(img/line.png) no-repeat;
+	margin-top: 9px
+}
+.play-btn {
+	height: 52px;
+	width: 52px;
+	background: url(img/play-btn.png) center;
+	border: none;
+	cursor: pointer;
+	transition: opacity .3s, transform .6s;
+}
+.play-btn:focus {
+	outline: none;
+}
+.play-btn:hover {
+	opacity: 0.6;
+	transform: rotate(120deg);
+}
+.profile-nav {
+	position: absolute;
+	right: 0;
+	top: 459px;
+}
+.another-user {
+	width: 25px;
+	height: 40px;
+	float: left;
+	background: url(img/another-user.png) no-repeat center;
+	transition: opacity .4s;
+}
+.another-user:hover {
+	opacity: 0.4;
+	cursor: pointer;
+}
+.profile-nav img {
+	border-radius: 50%;
+	cursor: pointer;
+	height: auto;
+	width: 40px;
+	margin-left: 10px;
+}
+
+
+/*CONTENT*/
+.content {
+	position: relative;
+}
+.content-nav {
+	position: absolute;
+	right: 0;
+}
+.content-nav li {
+	margin-left: 5px;
+}
+.content-nav .active a {
+	color: #eb7a26;
+}
+.content-nav li::after {
+	content: " |";
+}
+.content-nav li:last-child::after {
+	content: "";
+}
+.content-main {
+	min-width: 960px;
+	max-width: 1040px;
+	margin: 0 auto;
+	position: relative;
+}
+.thumb {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 25%;
+	margin-bottom: -4px;
+	overflow: hidden;
+}
+.thumb > img {
+	transition: transform 3s;
+}
+.thumb:hover > img {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.over {
+	background: rgba(255,255,255,0.35);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 100%;
+	transition: margin-top .4s;
+	padding: 20px;
+	z-index: 99;
+}
+.over-in {
+	text-align: center;
+	margin: 56px 0 40px;
+	color: #fff;
+}
+.over-in h3 {
+	font-weight: normal;
+}
+.author {
+	vertical-align: top;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #fff;
+}
+.over img {
+	width: 35px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+}
+.thumb:hover .over {
+	margin-top: 0;
+}

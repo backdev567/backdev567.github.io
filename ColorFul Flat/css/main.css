@@ -1,0 +1,357 @@
+@import url(reset.css);
+@font-face {
+	font-family: "MyriadPro regular";
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+	font-family: "MyriadPro semibold";
+	src: url(../fonts/MyriadPro-Semibold.otf);
+}
+@font-face {
+	font-family: "MyriadPro bold";
+	src: url(../fonts/MyriadPro-Bold.otf);
+}
+@font-face {
+	font-family: "MyriadPro italic";
+	src: url(../fonts/MyriadPro-It.otf);
+}
+@font-face {
+	font-family: "Chunkfive";
+	src: url(../fonts/chunkfive-webfont.ttf);
+}
+body {
+	background-color: #fff;
+	font: 1em "MyriadPro regular",arial,sans-serif;
+}
+a { text-decoration: none; }
+.nav li {
+	display: inline-block;
+}
+.header {
+	padding: 50px 0 35px 0;
+	background-color: #a5d3db;
+}
+.header-top {
+	margin-bottom: 95px;
+}
+.header a {
+	color: #3a494c;
+}
+.logo img {
+	margin-bottom: -5px;
+}
+.logo h2 {
+	font: 29px Chunkfive,Arial,sans-serif;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.logo a {
+	color: #3a494c;
+}
+.logo a:hover {
+	opacity: 0.9;
+}
+.header-nav {
+	float: right;
+}
+.header-nav li {
+	padding: 5px;
+	border-radius: 5px;
+	background: transparent;
+	margin-right: 10px;
+}
+.header-nav .active,
+.header-nav li:hover {
+	background: #3a494c;
+}
+.header-nav .active a,
+.header-nav li:hover a {
+	color: transparent;
+	color: #a8d5dd;
+}
+.header-nav a {
+	font: 23px "MyriadPro bold",arial,sans-serif;
+}
+.header-bottom h1 {
+	text-align: center;
+	font-family: "Chunkfive";
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-top: 55px;
+	color: #fff;
+}
+.header-bottom img {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+.ctrl { text-align: center; }
+.ctrl .active,
+.ctrl li:hover {
+	background: #fff;
+}
+.ctrl li {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 10px 3px 0 3px;
+}
+.serv {
+	padding: 90px 0 100px 0;
+	background-color: #fff;
+}
+.icon {
+	height: 146px;
+	background: url(../img/services-icon.png) no-repeat 0 0;
+	margin: 0 auto 10px auto;
+}
+.icon-design {
+	width: 167px;
+	background-position: 0 0;
+	margin: 0 auto 10px auto;
+}
+.icon-ideas {
+	width: 96px;
+	background-position: -167px 0;
+}
+.icon-browser {
+	width: 182px;
+	background-position: -263px 0;
+}
+.serv h3,
+.serv p {
+	text-align: center;
+}
+.serv p {
+	font-size: 19px;
+	color: #5e5e5e;
+	margin-bottom: 20px;
+}
+.serv h3 {
+	font: 23px "MyriadPro bold",arial,sans-serif;
+	margin-bottom: 20px;
+}
+.portfolio {
+	background-color: #9ad5a6;
+	padding: 50px 0 115px 0;
+}
+.page-header {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.page-header h2 {
+	font: 48px Chunkfive, arial,sans-serif;
+	color: #feffff;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.port-nav {
+	float: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.port-nav a {
+	color: #fff;
+	text-transform: uppercase;
+}
+.port-nav li {
+	padding: 5px 10px;
+	border: 2px solid transparent;
+}
+.port-nav li:hover {
+	background-color: transparent;
+	border-color: #fff;
+}
+.port-nav li:hover a {
+	color: #fff;
+}
+.port-nav .active:hover {
+	background: #fff;
+}
+.port-nav .active:hover a {
+	color: #a2a3a3;
+}
+.port-nav .active {
+	background: #fff;
+}
+.port-nav .active a {
+	color: #a2a3a3;
+}
+.thumb {
+	margin-bottom: 50px;
+}
+.thumb img {
+	width: 100%;
+	height: 100%;
+}
+.last-port {
+	text-align: center;
+}
+.button {
+	padding: 10px 10px 13px 10px;
+	display: inline-block;
+	border-radius: 10px;
+	font: 22px "MyriadPro bold",arial,sans-serif;
+	color: #fff;
+}
+.button-default {
+	background: #fff;
+	color: #a2a3a3;
+}
+.button-default:hover {
+	background: #eee;
+}
+.button-green {
+	background: #9ad4a6;
+}
+.button-blue {
+	background: #a5d3db;
+}
+.info {
+	padding: 30px 0 115px 0;
+}
+.info p {
+	margin-bottom: 14px;
+}
+.info h3 {
+	font: 30px "MyriadPro bold",arial,sans-serif;
+	margin-bottom: 20px;
+	color: #3f3f3f;
+}
+.info section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.meet,
+.blog {
+	padding: 87px 0 120px 0;
+}
+.meet {
+	background: #dfb6c5;
+}
+.tab-img img { width: 100%; }
+.tab-text {
+	text-align: center;
+	color: #383838;
+	background: #fff;
+	margin-top: -4px;
+	padding: 10px 0 30px 0;
+}
+.tab-text h3 {
+	font: 33px Chunkfive,arial,sans-serif;
+}
+.tab-text span {
+	font: 15px "MyriadPro bold",arial,sans-serif;
+}
+.tab-text p {
+	font-size: 13px;
+	padding: 0 20px 0 20px;
+	margin-bottom: 10px;
+}
+.tab-text em {
+	font-family: "MyriadPro italic";
+}
+.social li {
+	cursor: pointer;
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	margin-left: 10px;
+	background: url(../img/social.png);
+}
+.social .fb { background-position: 0 0; }
+.social .tw { background-position: -44px 0; }
+.social .pn { background-position: -89px 0; }
+.blog {
+	background: #b1d1dc;
+}
+.blog-in {
+	margin-bottom: 100px;
+}
+.footer {
+	background: #3c3c3c;
+	padding-top: 97px;
+}
+.footer-top {
+	margin-bottom: 30px;
+}
+.form input,
+.form .area {
+	background: #fff;
+	border-radius: 8px;
+	border: none;
+	padding: 15px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 100%;
+	font: 25px "MyriadPro semibold",arial,sans-serif;
+	/*color: #a3a3a3;*/
+	color: #8c8c8c;
+}
+.link a {
+	color: #fed57e;
+}
+.link a:hover {
+	text-decoration: underline;
+}
+.footer-bottom {
+	border-top: 1px solid #171717;
+	padding: 30px 0 30px 0;
+}
+.f-social li:first-child {
+	margin-left: 0;;
+}
+.copyright {
+	display: inline-block;
+	margin-top: 20px;
+}
+.f-social li {
+	cursor: pointer;
+	width: 56px;
+	height: 56px;
+	background-image: url(../img/footer-social.png);
+	margin-left: 10px;
+	display: inline-block;
+}
+.f-social li:hover { opacity: 0.8; }
+.f-tw { background-position: 0 0; }
+.f-fb { background-position: -56px 0; }
+.f-html5 { background-position: -112px 0;}
+.f-tamper { background-position: -168px 0; }
+
+*[placeholder]::-webkit-input-placeholder {
+	color: #a3a3a3;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.logo,
+	.header-bottom h1 {
+		margin-bottom: 30px;
+	}
+	.logo,
+	.header-nav,
+	.thumb {
+		text-align: center;
+	}
+	.header-top {
+		margin-bottom: 0;
+	}
+	.thumb img {
+		width: 80%;
+	}
+	.info img {
+		width: 50%;
+	}
+	.tab {
+		margin-bottom: 20px;
+	}
+	.form input,
+	.form .area {
+		width: 90%;
+	}
+}
