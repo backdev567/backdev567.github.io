@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Search</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- Bootstrap Grid -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.min.css">
+	<!-- Pe icon 7 stroke -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/pixeden-stroke-7-icon/1.2.3/dist/pe-icon-7-stroke.min.css
+">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="app">
+		<header class="app-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-1">
+						<div class="logo"></div>
+					</div>
+					<div class="col-10">
+						<form action="#">
+							<input type="search" id="search" placeholder="News" autofocus>
+						</form>
+					</div>
+					<div class="col-1">
+						<i class="pe-7s-micro"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="app-result">
+			<div class="container">
+				<div class="result">
+				</div>
+			</div>
+		</div>
+		<section class="app-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-5">
+						<h1>Trending News Articles <i class="fa fa-rss"></i></h1>
+						<section class="post">
+							<img src="img/post-1.png" alt="">
+							<article class="post-text">
+								<h2>Coast Guard Searches for Missing Royal...</h2>
+								<div class="post-link">
+									<a href="#">ABC News</a> <span> - 3 hours ago</span>
+								</div>
+								<p>Royal Caribbean's Navigator of the Seas pulls out of New
+								Orleans on the Mississippi River, Feb. 2, 2013. 76 Shares.
+								Email. Coast Guard crews ...</p>
+							</article>
+						</section>
+						<section class="post">
+							<img src="img/post-2.png" alt="">
+							<article class="post-text">
+								<h2>​Lena Dunham hospitalized after ovarian...</h2>
+								<div class="post-link">
+									<a href="#">CBS News</a> <span> - 5 hours ago</span>
+								</div>
+								<p>Lena Dunham will undergo surgery after experiencing an ovarian cyst rupture. Spokeswoman Cindi Berger said in a statement</p>
+							</article>
+						</section>
+						<section class="post">
+							<img src="img/post-3.png" alt="">
+							<article class="post-text">
+								<h2>Ben Carson suspends his 2016 presidential...</h2>
+								<div class="post-link">
+									<a href="#">CBS News</a> <span> - 14 hours ago</span>
+								</div>
+								<p>Politics. Donald Trump to skip conservative summit. By Stephanie Condon CBS News March 4, 2016, 5:48 PM Carson Spent Heavily on Consultants, Lightly on...</p>
+							</article>
+						</section>
+						<div class="see-more">
+							<a href="#">See more trending news <i class="fa fa-angle-right"></i></a> <span>Your thoughts? &nbsp; <i class="fa fa-smile-o" title="Yes, i like "></i><i title="No, I dont'" class="fa fa-frown-o"></i></span>
+						</div>
+					</div>
+					<div class="col-5 offset-2">
+						<h1>Top Results <i class="fa fa-rss"></i></h1>
+						<section class="post">
+							<article class="post-text">
+								<h2>Google News</h2>
+								<div class="post-link">
+									<a href="#">news.google.com</a> <span> - Google News <i class="fa fa-angle-down"></i></span>
+								</div>
+								<p>Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+							</article>
+						</section>
+						<section class="post">
+							<article class="post-text">
+								<h2>Fox News - Breaking News Updates | Latest News ...</h2>
+								<div class="post-link">
+									<a href="#">foxnews.com</a> <span> - Fox News Channel <i class="fa fa-angle-down"></i></span>
+								</div>
+								<p>Offers worldwide news coverage, analysis, show profiles, broadcast schedules, team biographies, and email news alerts.</p>
+							</article>
+						</section>
+						<section class="post">
+							<article class="post-text">
+								<h2>CNN - Breaking News, Latest News and Videos</h2>
+								<div class="post-link">
+									<a href="#">cnn.com</a> <span> - CNN <i class="fa fa-angle-down"></i></span>
+								</div>
+								<p>View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.</p>
+							</article>
+						</section>
+						<section class="post">
+							<article class="post-text">
+								<h2>Yahoo News - Latest News &amp; Headlines</h2>
+								<div class="post-link">
+									<a href="#">yahoo.com</a> <span> - Yahoo! News <i class="fa fa-angle-down"></i></span>
+								</div>
+								<p>The latest news and headlines from Yahoo! News. Get breaking news stories and in-depth coverage with videos and photos.</p>
+							</article>
+						</section>
+						<div class="see-more">
+							<a href="#">See more results <i class="fa fa-angle-right"></i></a> <span>Your thoughts? &nbsp; <i class="fa fa-smile-o" title="Yes, I like"></i><i title="No, I don't" class="fa fa-frown-o"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- AnimateCSS.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Created -->
+	<!-- backdev567@gmail.com -->
+</body>
+</html>

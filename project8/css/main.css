@@ -1,0 +1,143 @@
+body {
+	background: rgb(66,133,244);
+	background: linear-gradient(96deg, rgba(66,133,244,1) 0%, rgba(49,167,80,1) 100%);
+	font: 14px "Lato",serif;
+	color: #2e3136;
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+a,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.app {
+	visibility: hidden;
+	width: 98%;
+	margin: 50px auto;
+	background: #fff;
+}
+.app-main h1 {
+	position: relative;
+}
+.app-main a {
+	color: #34a853;
+}
+.app-header {
+	padding: 38px 0 38px 0;
+	border-bottom: 1px dotted #ebeff4;
+}
+.logo {
+	width: 52px;
+	height: 53px;
+	background: url(../img/google.png);
+}
+#search {
+	width: 100%;
+	display: inline-block;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #ebeff4;
+	padding-bottom: 0;
+	color: #aaa;
+	font-size: 24px;
+}
+#search::placeholder {
+	color: #aaa;
+	font-size: 24px;
+	font-family: 'Lato',serif;
+}
+#search:focus {
+	outline: none;
+	color: #363a3f;
+}
+.fa-angle-down {
+	vertical-align: text-bottom;
+}
+.fa {
+	font-size: 16px;
+	cursor: pointer;
+}
+.fa-rss {
+	color: #fbbc05;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.post {
+	margin-bottom: 30px;
+	visibility: hidden;
+}
+.post img {
+	float: left;
+	margin: 10px 10px 10px 0;
+	width: 130px;
+	height: 130px;
+}
+.post-text h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #323841;
+}
+.post-text p {
+	margin-top: 8px;
+	color: #75797f;
+}
+.post-link {
+	font-size: 14px;
+}
+.post-link span {
+	color: #b5b9bf;
+}
+.pe-7s-micro {
+	font-size: 36px;
+	color: #4285f4;
+	transform: translateY(10px);
+	cursor: pointer;
+	transition: opacity .1s;
+}
+.pe-7s-micro:hover {
+	opacity: 0.8;
+}
+.see-more {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.see-more a {
+	float: left;
+	color: #4285f4;
+	font-size: 16px;
+}
+.see-more a .fa {
+	color: #4285f4;
+}
+.see-more span {
+	float: right;
+	color: #b5b9bf;
+}
+.see-more span .fa {
+	font-size: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.see-more .fa-smile-o {
+	color: #34a853;
+}
+.see-more .fa-frown-o {
+	color: #ea4335;
+}
+.result {
+	font-size: 30px;
+	position: relative;
+}
+.result::after {
+	content: "not found";
+	font-size: 17px;
+	margin-left: 8px;
+}
