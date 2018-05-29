@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mark</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|PT+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<ul class="icons">
+		<li><i class="fa fa-bars" id="toggle-menu"></i>
+			<ul id="sub-menu">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance"></i></a></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="fullpage">
+		<header class="section header">
+			<div class="container">
+				<h1><span>Mark:</span> responsive, professional PSD template.</h1>
+				<p>Proin rhoncus ligula nec dictum volutpat. Curabitur eu magna vel massa laoreet condimentum. Cras vulputate pellentesque velit, non scelerisque neque porttitor ac. Nunc et mauris mi. Suspendisse potenti. Curabitur finibus congue metus, eu facilisis nisl fringilla viverra. Aenean pellentesque facilisis est quis dignissim.</p>
+			</div>
+		</header>
+		<section class="section intro">
+			<div class="container">
+				<h2>Introducing <span>Mark</span></h2>
+				<p>Proin rhoncus ligula nec dictum volutpat. Curabitur eu magna vel massa laoreet condimentum. Cras vulputate pellentesque velit, non scelerisque neque porttitor ac.</p>
+				<p>Nunc et mauris mi. Suspendisse potenti.</p>
+				<p>Curabitur eu magna vel massa laoreet condimentum. Cras vulputate pellentesque velit, non scelerisque neque porttitor ac.</p>
+				<p>Curabitur finibus congue metus, eu facilisis nisl fringilla viverra.</p>
+				<p>Curabitur eu magna vel massa laoreet condimentum. Cras vulputate pellentesque velit, non scelerisque neque porttitor ac.</p>
+				<p>Aenean pellentesque facilisis est quis dignissim.</p>
+				<p>Curabitur eu magna vel massa laoreet condimentum. Cras vulputate pellentesque velit, non scelerisque neque porttitor ac.</p>
+				<img src="img/poster.jpg" alt="">
+			</div>
+		</section>
+		<section class="section active footer"><div class="container">
+				<h2>Discover why everybody loves Mark.</h2>
+				<section class="section-text">
+					<h3>Blazing performance</h3>
+					<p>Sed hendrerit, ligula vitae suscipit dignissim, turpis diam dictum diam, sed facilisis ante orci et velit. Proin eget odio accumsan, varius nisi a, dignissim odio. Donec molestie gravida lacinia. Aenean sollicitudin convallis augue et tincidunt.</p>
+					<h3>Awesome customization</h3>
+					<p>Nunc semper tempus augue ut consectetur. Quisque ipsum nisl, consectetur vel tempus sed, accumsan quis orci. Aenean ligula orci, ultricies sit amet ante a, tincidunt varius leo. Nulla luctus elementum velit. Integer venenatis diam varius, fermentum enim lobortis, convallis nulla.</p>
+					<h3>Lightning fast</h3>
+					<p>Mauris ac quam in eros semper faucibus nec a massa. Donec semper congue efficitur. Duis consequat porttitor est at suscipit. Nam quis mollis ligula. In hac habitasse platea dictumst. Proin varius nulla lorem.</p>
+					<h3>Clean &amp; standardized code</h3>
+					<p>Nulla quis dui venenatis, egestas sapien vitae, lobortis massa. Cras eget nisl eget magna aliquet dignissim. Vivamus at accumsan leo.</p>
+					<h3>Use anywhere</h3>
+					<p>In egestas enim eu erat ultrices tempor. Fusce sed risus efficitur, interdum risus nec, varius dui. Nullam ullamcorper tortor nibh. Nam vel felis et arcu auctor posuere sit amet in nisi.</p>
+				</section>
+			</div></section>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+	<script>
+		$(function() {
+			$('#fullpage').fullpage();
+
+
+
+			$('#toggle-menu').click(function() {
+				$('#sub-menu').stop().toggle(0);
+			});
+		});
+	</script>
+</body>
+</html>
